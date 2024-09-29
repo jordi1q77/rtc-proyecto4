@@ -1,0 +1,44 @@
+
+
+.sectionExperienceStudies{
+  color: var(--rtc-color-2);
+  min-height: 50svh;
+}
+
+.divTitles{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5svh;
+}
+.titleExperience, .titleStudies {
+  cursor:pointer;
+  color: var(--rtc-color-3);
+}
+.titleHighlight {
+  text-decoration:underline;
+  color:var(--rtc-color-2);
+}
+.ulExperience, .ulStudies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5%;
+}
+.notVisible {
+  display: none;
+}
+
+.sectionExperienceStudies h3{
+  font-weight: bold;
+}
+.ulExperience > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--rtc-padding-s);
+}
+.ulStudies > li {
+  padding: var(--rtc-padding-s);
+}

@@ -1,0 +1,93 @@
+#contact {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rtc-gap-m);
+  padding: var(--rtc-padding-xl);
+  background-color: var(--rtc-color-6);
+  margin: var(--rtc-margin-l);
+ 
+}
+
+.contact-options > h2 {
+  color: var(--rtc-color-1);
+}
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-gap-s);
+  min-width: 200px;
+
+}
+
+.chip {
+  padding: var(--rtc-gap-s) var(--rtc-gap-l);
+  border: none;
+  border-radius: 50px;
+  background-color: var(--rtc-color-1 );
+  color: var(--rtc-color-2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chip:hover,
+.chip.selected {
+  background-color: var(--rtc-color-2);
+  color:var(--rtc-color-1);
+}
+
+#contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-gap-l);
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: var(--rtc-padding-s);
+  border: 1px solid var(--rtc-color-5);
+  border-radius: var(--rtc-border-radius);
+  width: 100%;
+  background-color: var(--rtc-color-2);
+  color: var(--rtc-color-1);
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: var(--rtc-color-2);
+  color: var(--rtc-color-1);
+  border: none;
+  border-radius: var(--rtc-border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: var(--rtc-color-3);
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  #contact {
+    flex-direction:column;
+    align-items: center;
+  }
+}

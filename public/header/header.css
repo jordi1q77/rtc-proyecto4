@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--rtc-color-5);
+  color: var(--rtc-color-2);
+}
+
+.navHorizontal {
+  margin: var(--rtc-margin-s);
+}
+.navHorizontal > ul{
+  display: flex;
+  justify-content: space-between;
+}
+.navHorizontal > ul > li {
+  padding: var(--rtc-padding-s);
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    justify-content: space-between;
+    padding: var(--rtc-padding-m);
+  }
+  .hamburger {
+    display: block;
+  }
+  .navHorizontal {
+    display: none;
+  }
+}
