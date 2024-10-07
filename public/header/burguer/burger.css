@@ -86,7 +86,7 @@
 .menuppal ul li { 
   list-style: none;
 	text-align:center;
-	font-family: Verdadna, Arial, Helvetica;
+	font-family: Verdana, Arial, Helvetica;
 	font-size:1.5rem;
 	line-height:3em;
 	height:3em;
@@ -96,9 +96,9 @@
 }
 .menuppal ul li a{
   text-decoration:none;
-  color:var(--secondary);
+  color:grey;
 }
 .menuppal ul li a:hover{
   text-decoration:none;
-  color:var(--primary);
+  color:var(--rtc-color-2);
 }
