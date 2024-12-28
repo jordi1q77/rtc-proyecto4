@@ -1,7 +1,7 @@
 import './style.css';
-import { loadHeader } from './public/header/header.js';
-import {loadMain} from './public/main/main.js';
-import { loadFooter } from './public/footer/footer.js';
+import { loadHeader } from './src/header/header.js';
+import {loadMain} from './src/main/main.js';
+import { loadFooter } from './src/footer/footer.js';
 
 
 

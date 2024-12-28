@@ -1,4 +1,4 @@
-import data from "../../data/data";
+import data from "../../../public/data/data";
 import './hero.css';
 export const createHeroSection = () =>{
   const divHero = document.createElement("div");

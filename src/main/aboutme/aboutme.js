@@ -1,18 +1,16 @@
 import './aboutme.css';
-import data from "../../data/data";
+import data from "../../../public/data/data";
+import { createTitle } from '../../../src/components/title/title';
 
 export const createAboutMeSection = () => {
   const sectionAboutMe = document.createElement("section");
-  const title = document.createElement("h2");
   const aboutMe = document.createElement("p");
 
   sectionAboutMe.id = "aboutMe";
   sectionAboutMe.classList.add("aboutMe");
-  title.textContent = "About Me";
-  title.classList.add("title");
   aboutMe.textContent = data.aboutMe;
 
-  sectionAboutMe.append(title);
+  sectionAboutMe.append(createTitle("About Me"));
   sectionAboutMe.append(aboutMe);
 
   return sectionAboutMe;

@@ -1,4 +1,4 @@
-import data from '../data/data.js';
+import data from "../../public/data/data";
 import { createBurger } from './burguer/burger.js';
 import './header.css';
 

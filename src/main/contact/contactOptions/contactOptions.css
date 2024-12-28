@@ -1,0 +1,24 @@
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-gap-s);
+  min-width: 200px;
+
+}
+
+.chip {
+  padding: var(--rtc-gap-s) var(--rtc-gap-l);
+  border: none;
+  border-radius: 50px;
+  background-color: var(--rtc-color-1 );
+  color: var(--rtc-color-2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chip:hover,
+.chip.selected {
+  background-color: var(--rtc-color-2);
+  color:var(--rtc-color-1);
+}

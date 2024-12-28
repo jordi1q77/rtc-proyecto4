@@ -1,28 +1,22 @@
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--rtc-color-2);
-  color:var(--rtc-color-5);
-  overflow: hidden;
-}
-.skills > ul {
+
+
+.imagesMoving {
   display: flex;
   width: 100%;
 }
-.skills > ul > li {
+.imagesMoving > li {
   display: flex;
   align-content: center;
   width: 100px;
   padding: 10px;
   flex-shrink: 0; 
 }
-.skills > ul >li > img {
+.imagesMoving >li > img {
   width: 100%;
   transition: transform 0.9s ease-in-out; 
 }
 
-.skills > ul:hover { 
+.imagesMoving:hover { 
   animation: scroll 25s linear infinite;
 }
 

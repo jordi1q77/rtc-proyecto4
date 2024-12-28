@@ -62,9 +62,3 @@ body {
   color: var(--rtc-color-3);
   background-color: var(--rtc-color-1);
 }
-
-.title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}

@@ -1,0 +1,8 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--rtc-color-2);
+  color:var(--rtc-color-5);
+  overflow: hidden;
+}

@@ -1,16 +1,15 @@
 import './projects.css';
-import data from "../../data/data";
+import data from "../../../public/data/data";
+import { createTitle } from '../../../src/components/title/title';
 
 export const createProjectsSection = () => {
   const projectsSection = document.createElement("section");
-  const title = document.createElement("h2");
   const projectList = document.createElement("ul");
 
   projectsSection.id = "projects";
   projectsSection.classList.add("projects");
-  title.textContent = "My Projects";
-  title.classList.add("title");
-  projectsSection.append(title);
+  
+  projectsSection.append(createTitle("My Projects"));
 
   for (const project of data.projects) {
       const projectElement = document.createElement("li");

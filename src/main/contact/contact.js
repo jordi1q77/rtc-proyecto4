@@ -1,81 +1,15 @@
 
 import './contact.css';
+import { createContactForm } from './contactForm/contactForm';
+import { createContactOptions } from './contactOptions/contactOptions';
 
 export const createContactSection = () => {
   const section = document.createElement("section");
   section.id = "contact";
   section.classList.add("contact");
 
-
-
-  const contactOptions = document.createElement("div");
-  contactOptions.classList.add("contact-options");
-
-  const title = document.createElement("h2");
-  title.textContent = "Talk to Me";
-  title.classList.add("title");
-  contactOptions.appendChild(title);
-
-  const topics = ["Agile", "Collaboration", "IA", "Develop", "Philosophy", "Something Cool"];
-
-  topics.forEach(topic => {
-    const button = document.createElement("button");
-    button.classList.add("chip");
-    button.setAttribute("data-topic", topic);
-    button.textContent = topic;
-    contactOptions.appendChild(button);
-  });
-
-  section.appendChild(contactOptions);
-
-  const form = document.createElement("form");
-  form.id = "contact-form";
-
-  const nameInput = document.createElement("input");
-  nameInput.type = "text";
-  nameInput.id = "name";
-  nameInput.name = "name";
-  nameInput.placeholder = "Your Name";
-  nameInput.required = true;
-
-  const nameError = document.createElement("span");
-  nameError.classList.add("error");
-  nameError.id = "name-error";
-
-  const emailInput = document.createElement("input");
-  emailInput.type = "email";
-  emailInput.id = "email";
-  emailInput.name = "email";
-  emailInput.placeholder = "Your Email";
-  emailInput.required = true;
-
-  const emailError = document.createElement("span");
-  emailError.classList.add("error");
-  emailError.id = "email-error";
-
-  const messageTextarea = document.createElement("textarea");
-  messageTextarea.id = "message";
-  messageTextarea.name = "message";
-  messageTextarea.placeholder = "Your Message";
-  messageTextarea.required = true;
-
-  const messageError = document.createElement("span");
-  messageError.classList.add("error");
-  messageError.id = "message-error";
-
-  const submitButton = document.createElement("button");
-  submitButton.type = "submit";
-  submitButton.textContent = "✈️ Submit";
-
-  form.appendChild(nameInput);
-  form.appendChild(nameError);
-  form.appendChild(emailInput);
-  form.appendChild(emailError);
-  form.appendChild(messageTextarea);
-  form.appendChild(messageError);
-  form.appendChild(submitButton);
-
-  section.appendChild(form);
+  section.appendChild(createContactOptions()); 
+  section.appendChild(createContactForm());
 
   const confirmationMessage = document.createElement("span");
   confirmationMessage.id = "confirmation-message";

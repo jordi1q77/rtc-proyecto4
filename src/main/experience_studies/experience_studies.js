@@ -1,5 +1,6 @@
+import data from "../../../public/data/data";
+import { createTitle } from '../../../src/components/title/title';
 import './experience_studies.css';
-import data from "../../data/data";
 
 const showExperience = () =>{
   const titleExperience = document.querySelector(".titleExperience");
@@ -26,19 +27,17 @@ const showStudies = () =>{
 export const createExperienceStudiesSection = () => {
   const sectionExperienceStudies = document.createElement("section");
   const divTitles = document.createElement("div");
-  const titleExperience = document.createElement("h2");
-  const titleStudies = document.createElement("h2");
+  const titleExperience = createTitle("Experience");
+  const titleStudies = createTitle("Studies");
   const ulExperience = document.createElement("ul");
   const ulStudies = document.createElement("ul");
 
   sectionExperienceStudies.id = "experience_studies";
   sectionExperienceStudies.classList.add("sectionExperienceStudies");
   divTitles.classList.add("divTitles");
-  titleExperience.textContent = "Experience";
-  titleExperience.classList.add("titleHighlight","titleExperience", "title");
+  titleExperience.classList.add("titleHighlight","titleExperience");
   titleExperience.addEventListener("click",() => showExperience());
-  titleStudies.textContent = "Studies";
-  titleStudies.classList.add("titleStudies", "title");
+  titleStudies.classList.add("titleStudies");
   titleStudies.addEventListener("click",() => showStudies());
   divTitles.append(titleExperience);
 
